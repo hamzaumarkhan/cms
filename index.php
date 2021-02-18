@@ -1,13 +1,4 @@
-<?php include('includes/db.php');?>
-<DOCTYPE html>
-<html>
-    <head>
-        <title>CMS System</title>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        <script src="bootstrap/css/bootstrap.css"</script>
-        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    </head>
-    <body>
+
     <?php include('includes/header.php');?> 
         <div class="container">
             <articale class="row">
@@ -19,7 +10,7 @@
                         echo'
                         <div class="panel panel-success">
                         <div class="panel-heading">
-                                    <h3><a href="post.php?post_id"'.$rows['id'].'">'.$rows['title'].'</a></h3>
+                                    <h3><a href="post.php?post_id='.$rows['id'].'">'.$rows['title'].'</a></h3>
                                 </div>
                             <div class="panel-body">
                                 <div class="col-lg-4">
@@ -42,5 +33,4 @@
         <div style="width:50px:height:50px;"></div> 
      <?php include 'includes/footer.php';?>
         
-    </body>   
-</html>
+   

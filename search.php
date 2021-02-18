@@ -1,17 +1,4 @@
-<?php include('includes/db.php');?> 
-<DOCTYPE html>
-<html>
-    <head>
-        <title>CMS System</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        <script src="bootstrap/css/bootstrap.css"</script>
-        <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-    </head>
-    <body>
+
     <?php include('includes/header.php');?> 
         <div class="container">
             <articale class="row">
@@ -57,5 +44,4 @@
         <div style="width:50px;height:50px"></div>
             <?php include 'includes/footer.php';?>
         
-    </body>   
-</html>
+    
