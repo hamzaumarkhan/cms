@@ -15,25 +15,25 @@
                      </div>
                      </div>
                     </form>
-                    <form class="panel-group form-horizontal" role="form">
+                    <form class="panel-group form-horizontal" role="form" action="accounts/login.php" method="post">
                             <div class="panel panel-default">
                                 <div class="panel-heading">Login Area</div>
                                 <div class="panel-body">
                                     <div class="form-group">
                                         <lable for="username" class="control-lable col-sm-4">User Name</lable>
                                         <div class="col-sm-7">
-                                            <input type="text" id="username" placeholder="Insert Email Address" class="form-control">
+                                            <input type="text" id="username" placeholder="Insert Email Address" name="user_name" class="form-control">
                                          </div>
                                  </div>
                             <div class="form-group">
                                 <lable for="password" class="control-lable col-sm-4">Password</lable>
                                 <div class="col-sm-7">
-                                <input type="password" id="password" placeholder="Your Passsword" class="form-control">
+                                <input type="password" id="password" placeholder="Your Passsword" name="password" class="form-control">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <div class="col-sm-12">
-                                <input type="submit" class="btn btn-success btn-block">
+                                <input type="submit" class="btn btn-success btn-block" name="submit_login">
                                 </div>
                             </div>
                         </form>

@@ -4,7 +4,7 @@
             <articale class="row">
                 <section class="col-lg-8">
                 <?php
-                    $sel_sql = "SELECT * FROM posts WHERE category = '$_GET[cat_name]'";
+                    $sel_sql = "SELECT * FROM posts WHERE category = '$_GET[cat_id]'";
                     $run_sql = mysqli_query($conn, $sel_sql);
                     while($rows = mysqli_fetch_assoc($run_sql)) {
                         echo'

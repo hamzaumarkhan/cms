@@ -1,6 +1,5 @@
 <?php include('db.php');?>
-<DOCTYPE html>
-<html>
+
     <head>
         <title>CMS System</title>
         <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
@@ -16,22 +15,17 @@
                     <?php
                     $sql_cat = "SELECT * FROM category";
                     $run_cat = mysqli_query($conn,$sql_cat);
-                    
                     while($rows = mysqli_fetch_assoc($run_cat)) {
-
                         if(isset($_GET['cat_name'])) {
-                            if($_GET['cat_name'] == $rows['category_name']){
+                             if($_GET['cat_name'] == $rows['category_name']){
                                 $class = 'active';
                             } else {
                                 $class = '';
                             }
                         } else {
                             $class = '';
-                        }
-
-
-
-                        if($rows['category_name'] == 'Home') {
+                       }
+                        if($rows['category_name'] == 'home') {
                             if($_SERVER['PHP_SELF'] == '/cms/index.php') {
                                 echo '<li class="active"><a href="index.php">'.ucfirst($rows['category_name']).'</a>';
                             } else {
@@ -39,7 +33,7 @@
                             }
 
                         } else {                          
-                            echo '<li class=""><a href="menu.php?cat_name='.$rows['category_name'].'">'.ucfirst($rows['category_name']).'</a>';                            
+                            echo '<li class=""><a href="menu.php?cat_id='.$rows['c_id'].'">'.ucfirst($rows['category_name']).'</a></li>';                     
                         }
                     }
                        
